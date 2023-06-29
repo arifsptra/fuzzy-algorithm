@@ -30,16 +30,54 @@
         }
     </script>
 </head>
-<body class="max-w-sm mx-auto overflow-hidden font-['Poppins']">
+<body class="max-w-sm mx-auto font-['Poppins']">
     <!-- navbar -->
-    <nav class="h-[60px] bg-opacity-80 shadow-[0_0_10px_0_rgba(0,0,0,0.10)] backdrop-blur-9.5 flex justify-between px-[20px] items-center">
+    <nav class="sticky h-[60px] bg-opacity-80 shadow-[0_0_10px_0_rgba(0,0,0,0.10)] backdrop-blur-9.5 flex justify-between px-[20px] items-center">
         <a href="./index.html"><img src="./assets/LogoArif.svg" alt="Arif." class="h-[20px]"></a>
         <!-- <i class="fa-solid fa-bars-staggered h-[20px] hover:text-primary transition ease-out duration-150"></i> -->
     </nav>
-    <main class="mx-[5%] my-[20px]">
+    <main class="mx-[5%] my-[10%]">
         <section id="information">
             <h1 class="text-[26px] font-bold text-textOne">Speed Control System</h1>
-            <p class="text-[16px] text-textTwo">Using Fuzzy Algorithm</p>
+            <p class="text-[16px] text-textThree">Using Fuzzy Algorithm</p>
+        </section>
+        <section id="rules" class="my-[10%]">
+            <h2 class="text-[20px] font-bold text-textTwo text-center">Rules</h2>
+            <div id="input">
+                <h3 class="text-[16px] text-textThree my-[1%] font-[500]">Input</h3>
+                <div id="distance" class="border rounded-lg my-[2%] hover:shadow-[0_0_10px_0_rgba(0,0,0,0.15)] transition ease-out duration-150">
+                    <h4 class="text-[14px] text-textThree text-center my-[2%]">Distance</h4>
+                    <div class="h-[200px]"></div>
+                </div>
+                <div id="speed" class="border rounded-lg my-[2%] hover:shadow-[0_0_10px_0_rgba(0,0,0,0.15)] transition ease-out duration-150">
+                    <h4 class="text-[14px] text-textThree text-center my-[2%]">Speed</h4>
+                    <div class="h-[200px]"></div>
+                </div>
+            </div>
+            <div id="output" class="mt-[6%]">
+                <h3 class="text-[16px] text-textThree my-[1%] font-[500]">Output</h3>
+                <div id="controlAction" class="border rounded-lg my-[2%] hover:shadow-[0_0_10px_0_rgba(0,0,0,0.15)] transition ease-out duration-150">
+                    <h4 class="text-[14px] text-textThree text-center my-[2%]">Control Action</h4>
+                    <div class="h-[200px]"></div>
+                </div>
+            </div>
+            <div id="table" class="mt-[6%]">
+                <h3 class="text-[16px] text-textThree my-[1%] font-[500]">Table</h3>
+                <div id="controlAction" class="border rounded-lg my-[2%] hover:shadow-[0_0_10px_0_rgba(0,0,0,0.15)] transition ease-out duration-150">
+                    <table class="min-h-[200px] w-full">
+                        <tr>
+                            <th>Distance</th>
+                            <th>Speed</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>One</td>
+                            <td>Two</td>
+                            <td>Three</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </section>
     </main>
     <script src="https://kit.fontawesome.com/1d72cf6431.js" crossorigin="anonymous"></script>

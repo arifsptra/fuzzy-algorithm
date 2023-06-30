@@ -93,19 +93,111 @@
           <h3 class="text-[16px] text-textThree my-[1%] font-[500]">Table</h3>
           <div
             id="controlAction"
-            class="border rounded-lg my-[2%] hover:shadow-[0_0_10px_0_rgba(0,0,0,0.15)] transition ease-out duration-150"
+            class="border rounded-lg my-[2%] hover:shadow-[0_0_10px_0_rgba(0,0,0,0.15)] transition ease-out duration-150 overflow-hidden"
           >
-            <table class="min-h-[200px] w-full">
-              <tr>
-                <th>Distance</th>
-                <th>Speed</th>
-                <th>Action</th>
-              </tr>
-              <tr>
-                <td>One</td>
-                <td>Two</td>
-                <td>Three</td>
-              </tr>
+            <style type="text/css">
+              .tg {
+                border-collapse: collapse;
+                border-spacing: 0;
+              }
+              .tg td {
+                border-color: #eee;
+                border-style: solid;
+                border-width: 0.5px;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                overflow: hidden;
+                padding: 10px 5px;
+                word-break: normal;
+              }
+              .tg th {
+                border-style: solid;
+                border-width: 0.5px;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                overflow: hidden;
+                padding: 10px 5px;
+                word-break: normal;
+              }
+              .tg .tg-u1yq {
+                background-color: #0088b9;
+                color: #eee;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: top;
+              }
+              .tg .tg-b3sw {
+                color: #555;
+                background-color: #8addfc;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: top;
+              }
+              .tg .tg-0lax {
+                text-align: left;
+                vertical-align: top;
+              }
+            </style>
+            <table class="tg min-h-[200px] w-full">
+              <thead>
+                <tr>
+                  <th class="tg-u1yq" colspan="2">IF</th>
+                  <th class="tg-u1yq">THEN</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-b3sw">Distance</td>
+                  <td class="tg-b3sw">Speed</td>
+                  <td class="tg-b3sw">Control Action</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Dekat</td>
+                  <td class="tg-0lax">Lambat</td>
+                  <td class="tg-0lax">Pertahankan</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Dekat</td>
+                  <td class="tg-0lax">Standar</td>
+                  <td class="tg-0lax">Kurangi</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Dekat</td>
+                  <td class="tg-0lax">Cepat</td>
+                  <td class="tg-0lax">Kurangi</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Sedang</td>
+                  <td class="tg-0lax">Lambat</td>
+                  <td class="tg-0lax">Tingkatkan</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Sedang</td>
+                  <td class="tg-0lax">Standar</td>
+                  <td class="tg-0lax">Pertahankan</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Sedang</td>
+                  <td class="tg-0lax">Cepat</td>
+                  <td class="tg-0lax">Kurangi</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Jauh</td>
+                  <td class="tg-0lax">Lambat</td>
+                  <td class="tg-0lax">Tingkatkan</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Jauh</td>
+                  <td class="tg-0lax">Standar</td>
+                  <td class="tg-0lax">Pertahankan</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Jauh</td>
+                  <td class="tg-0lax">Cepat</td>
+                  <td class="tg-0lax">Pertahankan</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>

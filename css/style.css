@@ -36,7 +36,7 @@ input[type="number"] {
   word-break: normal;
 }
 .tg .tg-u1yq {
-  background-color: #0088b9;
+  background-color: rgba(54, 162, 235, 1);
   color: #eee;
   font-weight: bold;
   text-align: center;
@@ -44,8 +44,7 @@ input[type="number"] {
 }
 .tg .tg-b3sw {
   color: #555;
-  background-color: #8addfc;
-  font-weight: bold;
+  background-color: rgba(54, 162, 235, 0.2);
   text-align: center;
   vertical-align: top;
 }

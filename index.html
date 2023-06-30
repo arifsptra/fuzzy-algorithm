@@ -153,8 +153,6 @@
       <section id="input" class="my-[10%]">
         <h2 class="text-[20px] font-bold text-textTwo text-center">Input</h2>
         <form
-          method="POST"
-          action="/"
           class="border rounded-lg my-[2%] hover:shadow-[0_0_10px_0_rgba(0,0,0,0.15)] transition ease-out duration-150 flex justify-between p-[5%] items-center"
         >
           <div class="max-w-[30%] text-center">
@@ -176,7 +174,8 @@
           <button
             type="submit"
             class="max-w-[30%] border-2 text-primary font-[500] border-primary w-full h-max py-2 rounded-full hover:ring-2 transition ease-out duration-150"
-          >
+            onclick="handleSubmit(event)"
+            >
             Submit
           </button>
         </form>
@@ -293,20 +292,20 @@
               />
             </div>
             <div class="max-w-[30%] text-center">
-              <label for="outputSample">Sample 2</label>
+              <label for="outputSample2">Sample 2</label>
               <input
                 disabled
                 type="number"
-                id="outputSample"
+                id="outputSample2"
                 class="border w-full rounded-full text-center p-2 mt-1"
               />
             </div>
             <div class="max-w-[30%] text-center">
-              <label for="outputSample">Sample 3</label>
+              <label for="outputSample3">Sample 3</label>
               <input
                 disabled
                 type="number"
-                id="outputSample"
+                id="outputSample3"
                 class="border w-full rounded-full text-center p-2 mt-1"
               />
             </div>
@@ -357,5 +356,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- local js -->
     <script src="./js/lineChart.js"></script>
+    <script src="./js/fuzzy.js"></script>
+    <script src="./js/useFuzzy.js"></script>
   </body>
 </html>

@@ -90,6 +90,9 @@
         text-align: left;
         vertical-align: top;
       }
+      label {
+        color: #555;
+      }
     </style>
   </head>
   <body class="max-w-sm mx-auto font-['Poppins']">
@@ -219,7 +222,7 @@
           </div>
         </div>
       </section>
-      <section id="input">
+      <section id="input" class="my-[10%]">
         <h2 class="text-[20px] font-bold text-textTwo text-center">Input</h2>
         <form
           method="POST"
@@ -249,6 +252,147 @@
             Submit
           </button>
         </form>
+      </section>
+      <section id="output" class="my-[10%]">
+        <h2 class="text-[20px] font-bold text-textTwo text-center">Output</h2>
+        <div class="border rounded-lg my-[2%] p-[5%] hover:shadow-[0_0_10px_0_rgba(0,0,0,0.15)] transition ease-out duration-150 text-center">
+          <h3 class="mb-[2%] font-[500]">Fuzzification of Distance</h3>
+          <div class="flex justify-between items-center">
+            <div class="max-w-[30%] text-center">
+              <label for="outputDekat">Dekat</label>
+              <input
+                disabled
+                type="number"
+                id="outputDekat"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+            <div class="max-w-[30%] text-center">
+              <label for="outputSedang">Sedang</label>
+              <input
+                disabled
+                type="number"
+                id="outputSedang"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+            <div class="max-w-[30%] text-center">
+              <label for="outputJauh">Jauh</label>
+              <input
+                disabled
+                type="number"
+                id="outputJauh"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+          </div>
+
+          <h3 class="mb-[2%] font-[500] mt-[6%]">Fuzzification of Speed</h3>
+          <div class="flex justify-between items-center">
+            <div class="max-w-[30%] text-center">
+              <label for="outputLambat">Lambat</label>
+              <input
+                disabled
+                type="number"
+                id="outputLambat"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+            <div class="max-w-[30%] text-center">
+              <label for="outputStandar">Standar</label>
+              <input
+                disabled
+                type="number"
+                id="outputStandar"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+            <div class="max-w-[30%] text-center">
+              <label for="outputCepat">Cepat</label>
+              <input
+                disabled
+                type="number"
+                id="outputCepat"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+          </div>
+
+          <h3 class="mb-[2%] font-[500] mt-[6%]">Conclusion</h3>
+          <div class="flex justify-between items-center">
+            <div class="max-w-[30%] text-center">
+              <label for="outputKurang">Kurang</label>
+              <input
+                disabled
+                type="number"
+                id="outputKurang"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+            <div class="max-w-[30%] text-center">
+              <label for="outputTahan">Tahan</label>
+              <input
+                disabled
+                type="number"
+                id="outputTahan"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+            <div class="max-w-[30%] text-center">
+              <label for="outputTambah">Tambah</label>
+              <input
+                disabled
+                type="number"
+                id="outputTambah"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+          </div>
+
+          <h3 class="mb-[2%] font-[500] mt-[6%]">Sample Value for Defuzzification</h3>
+          <div class="flex justify-between items-center">
+            <div class="max-w-[30%] text-center">
+              <label for="outputSample1">Sample 1</label>
+              <input
+                disabled
+                type="number"
+                id="outputSample1"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+            <div class="max-w-[30%] text-center">
+              <label for="outputSample">Sample 2</label>
+              <input
+                disabled
+                type="number"
+                id="outputSample"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+            <div class="max-w-[30%] text-center">
+              <label for="outputSample">Sample 3</label>
+              <input
+                disabled
+                type="number"
+                id="outputSample"
+                class="border w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+          </div>
+
+          <h3 class="mb-[2%] font-[500] mt-[6%]">Reward</h3>
+          <div class="flex justify-between items-center">
+            <div class="max-w-[30%] text-center mx-auto">
+              <input
+                disabled
+                type="number"
+                id="outputReward"
+                class="border border-primary text-primary w-full rounded-full text-center p-2 mt-1"
+              />
+            </div>
+          </div>
+        </div>
+        
       </section>
     </main>
     <!-- icon -->

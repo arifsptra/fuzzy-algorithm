@@ -32,6 +32,65 @@
         },
       };
     </script>
+
+    <!-- local style -->
+    <style>
+      /* for input type number */
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+      /* for table */
+      .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      .tg td {
+        border-color: #eee;
+        border-style: solid;
+        border-width: 0.5px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+      }
+      .tg th {
+        border-style: solid;
+        border-width: 0.5px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+      }
+      .tg .tg-u1yq {
+        background-color: #0088b9;
+        color: #eee;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: top;
+      }
+      .tg .tg-b3sw {
+        color: #555;
+        background-color: #8addfc;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: top;
+      }
+      .tg .tg-0lax {
+        text-align: left;
+        vertical-align: top;
+      }
+    </style>
   </head>
   <body class="max-w-sm mx-auto font-['Poppins']">
     <!-- navbar -->
@@ -46,7 +105,9 @@
     <main class="mx-[5%] my-[10%]">
       <section id="information">
         <h1 class="text-[26px] font-bold text-textOne">Speed Control System</h1>
-        <p class="text-[16px] text-textThree">Using Fuzzy Algorithm</p>
+        <p class="text-[16px] text-textThree">
+          Using Fuzzy Algorithm<br />Mamdani Method
+        </p>
       </section>
       <section id="rules" class="my-[10%]">
         <h2 class="text-[20px] font-bold text-textTwo text-center">Rules</h2>
@@ -95,50 +156,6 @@
             id="controlAction"
             class="border rounded-lg my-[2%] hover:shadow-[0_0_10px_0_rgba(0,0,0,0.15)] transition ease-out duration-150 overflow-hidden"
           >
-            <style type="text/css">
-              .tg {
-                border-collapse: collapse;
-                border-spacing: 0;
-              }
-              .tg td {
-                border-color: #eee;
-                border-style: solid;
-                border-width: 0.5px;
-                font-family: Arial, sans-serif;
-                font-size: 14px;
-                overflow: hidden;
-                padding: 10px 5px;
-                word-break: normal;
-              }
-              .tg th {
-                border-style: solid;
-                border-width: 0.5px;
-                font-family: Arial, sans-serif;
-                font-size: 14px;
-                font-weight: bold;
-                overflow: hidden;
-                padding: 10px 5px;
-                word-break: normal;
-              }
-              .tg .tg-u1yq {
-                background-color: #0088b9;
-                color: #eee;
-                font-weight: bold;
-                text-align: center;
-                vertical-align: top;
-              }
-              .tg .tg-b3sw {
-                color: #555;
-                background-color: #8addfc;
-                font-weight: bold;
-                text-align: center;
-                vertical-align: top;
-              }
-              .tg .tg-0lax {
-                text-align: left;
-                vertical-align: top;
-              }
-            </style>
             <table class="tg min-h-[200px] w-full">
               <thead>
                 <tr>
@@ -201,6 +218,37 @@
             </table>
           </div>
         </div>
+      </section>
+      <section id="input">
+        <h2 class="text-[20px] font-bold text-textTwo text-center">Input</h2>
+        <form
+          method="POST"
+          action="/"
+          class="border rounded-lg my-[2%] hover:shadow-[0_0_10px_0_rgba(0,0,0,0.15)] transition ease-out duration-150 flex justify-between p-[5%] items-center"
+        >
+          <div class="max-w-[30%] text-center">
+            <label for="inputDistance">Distance</label>
+            <input
+              type="number"
+              id="inputDistance"
+              class="border w-full rounded-full text-center p-2 mt-1 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+            />
+          </div>
+          <div class="max-w-[30%] text-center">
+            <label for="inputSpeed">Speed</label>
+            <input
+              type="number"
+              id="inputSpeed"
+              class="border w-full rounded-full text-center p-2 mt-1 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+            />
+          </div>
+          <button
+            type="submit"
+            class="max-w-[30%] border-2 text-primary font-[500] border-primary w-full h-max py-2 rounded-full hover:ring-2 transition ease-out duration-150"
+          >
+            Submit
+          </button>
+        </form>
       </section>
     </main>
     <!-- icon -->

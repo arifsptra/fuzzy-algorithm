@@ -64,21 +64,21 @@ var controlAction = {
   labels: ["12,5", "25", "37,5", "50", "62,5", "75", "87,5", "100"],
   datasets: [
     {
-      label: "Kurangi",
+      label: "Kurang",
       data: [1, 1, 1, 0.5, 0],
       backgroundColor: "rgba(237, 117, 116, 0.2)", // Warna area di bawah garis
       borderColor: "rgba(237, 117, 116, 1)", // Warna garis
       borderWidth: 2, // Lebar garis
     },
     {
-      label: "Pertahankan",
+      label: "Tahan",
       data: [, , 0, 0.5, 1, 0.5, 0],
       backgroundColor: "rgba(54, 162, 235, 0.2)", // Warna area di bawah garis
       borderColor: "rgba(54, 162, 235, 1)", // Warna garis
       borderWidth: 2, // Lebar garis
     },
     {
-      label: "Tingkatkan",
+      label: "Tambah",
       data: [, , , , 0, 0.5, 1, 1, 1],
       backgroundColor: "rgba(54, 218, 161, 0.2)", // Warna area di bawah garis
       borderColor: "rgba(54, 218, 161, 1)", // Warna garis
